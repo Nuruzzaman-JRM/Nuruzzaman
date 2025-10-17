@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Web3 Knowledge Universe — Nuruzzaman_JRM</title>
+  <meta name="description" content="The Complete Web3 Knowledge Map (2025) — curated by Nuruzzaman_JRM" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0f1a; --panel:#0f1724; --muted:#9aa6c1; --accent1:#7c3aed; --accent2:#06b6d4; --glass: rgba(255,255,255,0.04);
+      --max-width:1100px; --radius:12px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;font-family:Inter,system-ui,Arial; background:linear-gradient(180deg,var(--bg) 0%, #071024 100%); color:#e6eef9; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+      line-height:1.5; -webkit-tap-highlight-color:transparent;
+    }
+    .container{max-width:var(--max-width); margin:36px auto; padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between; gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{font-weight:800;font-size:20px; letter-spacing:0.6px; color:var(--accent1)}
+    .subtitle{color:var(--muted); font-size:13px}
+    nav a{color:var(--muted); text-decoration:none; margin-left:14px}
+    .hero{margin-top:28px; padding:28px; background:linear-gradient(180deg, rgba(124,58,237,0.08), rgba(6,182,212,0.02)); border-radius:16px; box-shadow:0 6px 30px rgba(2,6,23,0.6)}
+    .hero h1{margin:0; font-size:28px}
+    .hero p{margin:8px 0 0; color:var(--muted)}
+    .cta{margin-top:18px}
+    .btn{display:inline-block;padding:10px 16px;border-radius:10px;background:linear-gradient(90deg,var(--accent1),var(--accent2)); color:#fff; text-decoration:none;font-weight:600}
+    main{margin-top:20px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border-radius:12px; padding:16px; margin-bottom:16px; box-shadow:0 4px 18px rgba(2,6,23,0.6)}
+    h2.section{margin:0 0 10px; font-size:18px}
+    .muted{color:var(--muted); font-size:14px}
+    /* accordion */
+    .accordion{margin-top:12px}
+    .accordion-item{border-radius:10px; overflow:hidden; margin-bottom:8px; border:1px solid rgba(255,255,255,0.03)}
+    .acc-head{display:flex;align-items:center; justify-content:space-between; gap:12px; padding:12px 14px; cursor:pointer}
+    .acc-head h3{margin:0;font-size:15px}
+    .acc-body{padding:0 14px 14px; color:var(--muted); font-size:14px; display:none}
+    .acc-body ul{margin:8px 0 0 18px}
+    .tags{display:flex; gap:8px; flex-wrap:wrap; margin-top:8px}
+    .tag{padding:6px 8px;border-radius:999px;background:rgba(255,255,255,0.03); color:var(--muted); font-size:12px}
+    footer{margin-top:28px; padding:18px; text-align:center; color:var(--muted)}
+    /* responsive */
+    @media (min-width:880px){ .hero h1{font-size:34px} }
+    /* small tweaks */
+    .grid-2{display:grid;grid-template-columns:1fr;gap:12px}
+    @media(min-width:880px){ .grid-2{grid-template-columns:1fr 350px} }
+    .panel{padding:14px;border-radius:10px;background:var(--panel)}
+    .contact input, .contact textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit;margin-top:8px}
+    .small{font-size:13px;color:var(--muted)}
+    .logo-mark{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--accent1),var(--accent2));color:#fff;font-weight:700}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo-mark">NJ</div>
+        <div>
+          <div class="logo">Web3 Knowledge Universe</div>
+          <div class="subtitle">by <strong>Nuruzzaman_JRM</strong> — Explore, Learn, Build</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#map">Knowledge Map</a>
+        <a href="#learn">Learn</a>
+        <a href="#jobs">Jobs</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero card">
+      <h1>Explore the entire Web3 ecosystem — from blockchain to AI, DeFi, and beyond.</h1>
+      <p class="muted">Curated and built by <strong>Nuruzzaman_JRM</strong>. Start with the map below and deep-dive into any topic.</p>
+      <div class="cta"><a class="btn" href="#map">Start Exploring</a></div>
+    </section>
+
+    <main class="grid-2">
+      <div>
+        <section id="map" class="card">
+          <h2 class="section">The Complete Web3 Knowledge Map (2025)</h2>
+          <p class="muted">Click any category to expand — this map contains 23 major Web3 domains with subtopics and tools.</p>
+
+          <div class="accordion" id="accordion">
+
+            <!-- We'll include the 23 categories as accordion items -->
+
+            <div class="accordion-item">
+              <div class="acc-head"><h3>1. Core Blockchain Foundation</h3><div class="small">Consensus, nodes, hashing</div></div>
+              <div class="acc-body"><ul>
+                <li>Consensus mechanisms: PoW, PoS, DPoS, PoH, BFT, DAG, HotStuff</li>
+                <li>Block structure & Merkle Trees</li>
+                <li>Nodes & Validators (full, light, RPC)</li>
+                <li>Transaction lifecycle; Hashing & digital signatures</li>
+                <li>Gas & fee economics; Forks; Finality & reorgs</li>
+              </ul></div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="acc-head"><h3>2. Smart Contracts & On-chain Logic</h3><div class="small">Solidity, Rust, formal verification</div></div>
+              <div class="acc-body"><ul>
+                <li>Languages: Solidity, Rust, Move, Vyper</li>
+                <li>Testing frameworks: Hardhat, Foundry, Anchor, Truffle</li>
+                <li>Upgradable patterns: Proxy, Beacon, Diamond</li>
+                <li>Audit & formal verification (MythX, Slither)</li>
+                <li>Oracles & AA (ERC-4337)</li>
+              </ul></div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="acc-head"><h3>3. Wallets & Key Management</h3><div class="small">MPC, social recovery, account abstraction</div></div>
+              <div class="acc-body"><ul>
+                <li>EOA vs Smart Contract Accounts</li>
+                <li>Seed phrases, private/public keys</li>
+                <li>MPC wallets & social recovery</li>
+                <li>Cold vs hot wallets; WalletConnect, RainbowKit</li>
+              </ul></div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="acc-head"><h3>4. Token Standards & Tokenomics</h3><div class="small">ERCs, SPL, token models</div></div>
+              <div class="acc-body"><ul>
+                <li>ERC-20, SPL, ERC-721, ERC-1155, ERC-4626, ERC-6551</li>
+                <li>Token design, utility, governance, vesting</li>
+                <li>Launch models: airdrops, IDOs, fair launches</li>
+              </ul></div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="acc-head"><h3>5. Decentralized Finance (DeFi)</h3><div class="small">DEXs, lending, derivatives</div></div>
+              <div class="acc-body"><ul>
+                <li>DEXs: AMM (Uniswap, Raydium), orderbook (Serum)</li>
+                <li>Lending/Borrowing: Aave, Compound, Solend</li>
+                <li>Yield Farming, Stablecoins, Derivatives, Options</li>
+                <li>Restaking / LSD / LRT; Aggregators; Insurance; RWA-backed DeFi</li>
+              </ul></div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="acc-head"><h3>6. Real World Assets (RWA)</h3><div class="small">Tokenized bonds, real estate, compliance</div></div>
+              <div class="acc-body"><ul>
+                <li>Tokenization of physical & financial assets</li>
+                <li>On-chain yield, legal frameworks, custody & audit</li>
+                <li>Protocols: Ondo, Centrifuge, Goldfinch, Maple, RealT</li>
+              </ul></div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="acc-head"><h3>7. DePIN (Decentralized Physical Infrastructure)</h3><div class="small">Compute, connectivity, sensors</div></div>
+              <div class="acc-body"><ul>
+                <li>Compute: io.net, Akash, Gensyn</li>
+                <li>Connectivity: Helium, WiFiMap</li>
+                <li>Sensors & mapping: WeatherXM, Hivemapper; Energy networks</li>
+              </ul></div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="acc-head"><h3>8. AI x Web3</h3><div class="small">Decentralized AI compute & agents</div></div>
+              <div class="acc-body"><ul>
+                <li>Decentralized AI compute (Bittensor, Ritual)</li>
+                <li>AI model tokenization, federated learning</li>
+                <li>Autonomous AI wallets & proof-of-intelligence</li>
+              </ul></div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="acc-head"><h3>9. Gaming, Metaverse & Virtual Economies</h3><div class="small">GameFi, in-game NFTs</div></div>
+              <div class="acc-body"><ul>
+                <li>Play-to-Earn, Move-to-Earn, Own-to-Earn models</li>
+                <li>Metaverse: The Sandbox, Decentraland, Otherside</li>
+                <li>Web3 game development SDKs & interoperable avatars</li>
+              </ul></div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="acc-head"><h3>10. Interoperability & Cross-chain Systems</h3><div class="small">Bridges, messaging, IBC</div></div>
+              <div class="acc-body"><ul>
+                <li>LayerZero, Wormhole, Axelar, CCIP</li>
+                <li>Bridges & liquidity networks, atomic swaps</li>
+                <li>IBC (Cosmos), modular design, RaaS</li>
+              </ul></div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="acc-head"><h3>11. Modular & Layered Blockchain Architecture</h3><div class="small">Execution, data availability</div></div>
+              <div class="acc-body"><ul>
+                <li>Execution layers (OP Stack), consensus layers</li>
+                <li>Data availability: Celestia, EigenDA</li>
+                <li>Settlement layers, appchains & sovereign rollups</li>
+              </ul></div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="acc-head"><h3>12. DAOs & Governance</h3><div class="small">Treasuries, voting, subDAOs</div></div>
+              <div class="acc-body"><ul>
+                <li>Aragon, Tally, Snapshot, Gnosis Safe</li>
+                <li>Treasury mgmt, proposal voting, delegation</li>
+                <li>Incentive alignment & participation models</li>
+              </ul></div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="acc-head"><h3>13. Decentralized Identity (DID) & Reputation</h3><div class="small">ENS, SBTs, PoP</div></div>
+              <div class="acc-body"><ul>
+                <li>ENS, Lens, Farcaster, CyberConnect</li>
+                <li>Soulbound tokens (SBTs), Proof-of-Personhood</li>
+                <li>Reputation: Galxe, Gitcoin Passport</li>
+              </ul></div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="acc-head"><h3>14. SocialFi & Creator Economy</h3><div class="small">Tokens for creators</div></div>
+              <div class="acc-body"><ul>
+                <li>Tokenized profiles, Friend.tech, DeSo, Lens</li>
+                <li>Creator tokens, NFT memberships, gated access</li>
+              </ul></div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="acc-head"><h3>15. Data & Storage Infrastructure</h3><div class="small">IPFS, Arweave, indexing</div></div>
+              <div class="acc-body"><ul>
+                <li>IPFS, Arweave, Filecoin</li>
+                <li>Indexing: The Graph, SubQuery; Queryable storage</li>
+                <li>Decentralized DBs: Tableland, Ceramic</li>
+              </ul></div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="acc-head"><h3>16. Privacy & Security</h3><div class="small">ZK, mixers, audits</div></div>
+              <div class="acc-body"><ul>
+                <li>ZK proofs: zkSNARKs, zkSTARKs</li>
+                <li>Private txs, on-chain auditing tools</li>
+                <li>Wallet safety, multisig, MPC, bug bounties</li>
+              </ul></div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="acc-head"><h3>17. ReFi & Sustainability</h3><div class="small">Carbon credits, climate DAOs</div></div>
+              <div class="acc-body"><ul>
+                <li>Carbon credits tokenization; KlimaDAO</li>
+                <li>Green assets, renewable financing, impact DAOs</li>
+              </ul></div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="acc-head"><h3>18. Legal, Compliance & Regulatory Layer</h3><div class="small">On-chain KYC, CBDCs</div></div>
+              <div class="acc-body"><ul>
+                <li>On-chain KYC & AML; Regulated RWA markets</li>
+                <li>Smart-contract legal agreements; Arbitration (Kleros)</li>
+                <li>CBDCs & government integrations</li>
+              </ul></div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="acc-head"><h3>19. Analytics, Research & Alpha Hunting</h3><div class="small">Dune, Nansen, Arkham</div></div>
+              <div class="acc-body"><ul>
+                <li>On-chain dashboards: Dune, Nansen, Arkham</li>
+                <li>Wallet tracking & OG analysis; data science in crypto</li>
+                <li>Social sentiment tools: Kaito, LunarCrush</li>
+              </ul></div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="acc-head"><h3>20. Infrastructure, Middleware & Dev Tools</h3><div class="small">RPCs, SDKs, automation</div></div>
+              <div class="acc-body"><ul>
+                <li>RPC providers: Alchemy, QuickNode, Helius</li>
+                <li>SDKs, Subgraphs, Observability (Tenderly)</li>
+                <li>Automation: Gelato, Chainlink Automation</li>
+              </ul></div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="acc-head"><h3>21. Economics & Game Theory in Web3</h3><div class="small">Incentives, mechanism design</div></div>
+              <div class="acc-body"><ul>
+                <li>Token incentive systems; mechanism design</li>
+                <li>Coordination games; Nash equilibrium in DAOs</li>
+                <li>Market simulations & modelling</li>
+              </ul></div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="acc-head"><h3>22. Emerging Innovations (2025+)</h3><div class="small">Restaking, modular AI agents</div></div>
+              <div class="acc-body"><ul>
+                <li>Restaking + AVS expansion; modular AI agents</li>
+                <li>Intent-centric blockchain design; RWA + AI fusion</li>
+                <li>Quantum-resistant cryptography; DeSci; Data DAOs</li>
+              </ul></div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="acc-head"><h3>23. Education, Community & Career</h3><div class="small">Bounties, jobs, open-source</div></div>
+              <div class="acc-body"><ul>
+                <li>Developer bounties & hackathons</li>
+                <li>Technical writing, moderation, DAO roles</li>
+                <li>Web3 job ecosystems & open-source contribution</li>
+              </ul></div>
+            </div>
+
+          </div>
+        </section>
+
+        <section id="learn" class="card">
+          <h2 class="section">Learn & Explore</h2>
+          <p class="muted">Curated resources, tutorials and platforms to level up fast.</p>
+          <div style="margin-top:10px">
+            <div class="tags">
+              <div class="tag">Dune</div>
+              <div class="tag">Nansen</div>
+              <div class="tag">The Graph</div>
+              <div class="tag">Hardhat</div>
+              <div class="tag">Foundry</div>
+              <div class="tag">Supabase</div>
+            </div>
+            <p class="small" style="margin-top:10px">Jobs & Bounties platforms: Zealy, Layer3, Galxe, Dework, Web3.career</p>
+          </div>
+        </section>
+
+        <section id="jobs" class="card">
+          <h2 class="section">Get Involved — Jobs & Bounties</h2>
+          <p class="muted">How to find Web3 jobs, bounties, and community roles.</p>
+          <ol style="margin-top:10px;color:var(--muted)">
+            <li>Create a strong Twitter + Notion portfolio</li>
+            <li>Do small bounties (Layer3, Zealy) to build reputation</li>
+            <li>Join project discords and search job channels</li>
+            <li>Pitch with short DM templates and writing samples</li>
+          </ol>
+        </section>
+
+      </div>
+
+      <aside class="panel">
+        <h3 style="margin:0 0 8px">Quick Links</h3>
+        <div class="small">Select resources & platforms</div>
+        <div style="margin-top:12px">
+          <div class="tag">Framer AI</div>
+          <div class="tag">Replit</div>
+          <div class="tag">Supabase</div>
+          <div class="tag">Vercel</div>
+        </div>
+
+        <div style="margin-top:16px">
+          <h3 style="margin:0 0 8px">Contact</h3>
+          <div class="small">Twitter: <a href="https://twitter.com/Nuruzzaman_JRM" target="_blank" style="color:var(--accent2)">@Nuruzzaman_JRM</a></div>
+          <div class="small">Email: <a href="mailto:nuruzzamanjrm@gmail.com" style="color:var(--accent2)">nuruzzamanjrm@gmail.com</a></div>
+        </div>
+
+        <div style="margin-top:16px">
+          <h3 style="margin:0 0 8px">Theme</h3>
+          <div class="small">Dark neon (purple + blue). Use for presentations & social headers.</div>
+        </div>
+      </aside>
+    </main>
+
+    <footer id="contact" class="card">
+      <div style="display:flex;gap:18px;flex-wrap:wrap;align-items:center;justify-content:space-between">
+        <div>
+          <strong>Work with Nuruzzaman_JRM</strong>
+          <div class="small" style="margin-top:6px">For collaborations, writing, moderation, or Web3 strategy reach out.</div>
+        </div>
+        <div class="contact" style="max-width:420px;width:100%">
+          <input type="text" placeholder="Your name" />
+          <input type="email" placeholder="Your email" />
+          <textarea rows="3" placeholder="Message (what do you want to build?)"></textarea>
+          <div style="margin-top:8px"><a class="btn" href="mailto:nuruzzamanjrm@gmail.com">Email Nuruzzaman</a></div>
+        </div>
+      </div>
+      <div style="margin-top:14px; text-align:center; color:var(--muted)">© "Web3 Knowledge Universe" — Nuruzzaman_JRM • Built for learning (2025)</div>
+    </footer>
+  </div>
+
+  <script>
+    // accordion behavior
+    document.querySelectorAll('.accordion-item').forEach(item => {
+      const head = item.querySelector('.acc-head');
+      const body = item.querySelector('.acc-body');
+      head.addEventListener('click', () => {
+        const isOpen = body.style.display === 'block';
+        // close others
+        document.querySelectorAll('.acc-body').forEach(b => b.style.display = 'none');
+        if(!isOpen) body.style.display = 'block';
+        head.scrollIntoView({behavior:'smooth', block:'center'});
+      });
+    });
+
+    // smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{ e.preventDefault(); const t=document.querySelector(a.getAttribute('href')); if(t) t.scrollIntoView({behavior:'smooth', block:'start'}) });
+    });
+  </script>
+</body>
+</html>
