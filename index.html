@@ -1,395 +1,668 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Web3 Knowledge Universe — Nuruzzaman_JRM</title>
-  <meta name="description" content="The Complete Web3 Knowledge Map (2025) — curated by Nuruzzaman_JRM" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complete Web3 Learning Hub - Master All 23 Topics</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    :root{
-      --bg:#0b0f1a; --panel:#0f1724; --muted:#9aa6c1; --accent1:#7c3aed; --accent2:#06b6d4; --glass: rgba(255,255,255,0.04);
-      --max-width:1100px; --radius:12px;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0;font-family:Inter,system-ui,Arial; background:linear-gradient(180deg,var(--bg) 0%, #071024 100%); color:#e6eef9; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
-      line-height:1.5; -webkit-tap-highlight-color:transparent;
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding-bottom: 50px;
     }
-    .container{max-width:var(--max-width); margin:36px auto; padding:24px}
-    header{display:flex;align-items:center;justify-content:space-between; gap:16px}
-    .brand{display:flex;align-items:center;gap:12px}
-    .logo{font-weight:800;font-size:20px; letter-spacing:0.6px; color:var(--accent1)}
-    .subtitle{color:var(--muted); font-size:13px}
-    nav a{color:var(--muted); text-decoration:none; margin-left:14px}
-    .hero{margin-top:28px; padding:28px; background:linear-gradient(180deg, rgba(124,58,237,0.08), rgba(6,182,212,0.02)); border-radius:16px; box-shadow:0 6px 30px rgba(2,6,23,0.6)}
-    .hero h1{margin:0; font-size:28px}
-    .hero p{margin:8px 0 0; color:var(--muted)}
-    .cta{margin-top:18px}
-    .btn{display:inline-block;padding:10px 16px;border-radius:10px;background:linear-gradient(90deg,var(--accent1),var(--accent2)); color:#fff; text-decoration:none;font-weight:600}
-    main{margin-top:20px}
-    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border-radius:12px; padding:16px; margin-bottom:16px; box-shadow:0 4px 18px rgba(2,6,23,0.6)}
-    h2.section{margin:0 0 10px; font-size:18px}
-    .muted{color:var(--muted); font-size:14px}
-    /* accordion */
-    .accordion{margin-top:12px}
-    .accordion-item{border-radius:10px; overflow:hidden; margin-bottom:8px; border:1px solid rgba(255,255,255,0.03)}
-    .acc-head{display:flex;align-items:center; justify-content:space-between; gap:12px; padding:12px 14px; cursor:pointer}
-    .acc-head h3{margin:0;font-size:15px}
-    .acc-body{padding:0 14px 14px; color:var(--muted); font-size:14px; display:none}
-    .acc-body ul{margin:8px 0 0 18px}
-    .tags{display:flex; gap:8px; flex-wrap:wrap; margin-top:8px}
-    .tag{padding:6px 8px;border-radius:999px;background:rgba(255,255,255,0.03); color:var(--muted); font-size:12px}
-    footer{margin-top:28px; padding:18px; text-align:center; color:var(--muted)}
-    /* responsive */
-    @media (min-width:880px){ .hero h1{font-size:34px} }
-    /* small tweaks */
-    .grid-2{display:grid;grid-template-columns:1fr;gap:12px}
-    @media(min-width:880px){ .grid-2{grid-template-columns:1fr 350px} }
-    .panel{padding:14px;border-radius:10px;background:var(--panel)}
-    .contact input, .contact textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit;margin-top:8px}
-    .small{font-size:13px;color:var(--muted)}
-    .logo-mark{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--accent1),var(--accent2));color:#fff;font-weight:700}
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    header {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    
+    header h1 {
+      color: #2d3748;
+      margin-bottom: 15px;
+      font-size: 2.5em;
+    }
+    
+    header p {
+      color: #718096;
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+    
+    .search-box {
+      width: 100%;
+      max-width: 500px;
+      padding: 12px 20px;
+      border: 2px solid #e2e8f0;
+      border-radius: 25px;
+      font-size: 16px;
+      outline: none;
+      margin-bottom: 20px;
+    }
+    
+    .search-box:focus {
+      border-color: #667eea;
+    }
+    
+    .topic-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+    
+    .topic-card {
+      background: white;
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border: 3px solid transparent;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .topic-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #667eea, #764ba2);
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+    
+    .topic-card:hover::before {
+      transform: scaleX(1);
+    }
+    
+    .topic-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+    
+    .topic-card.active {
+      border-color: #667eea;
+      background: linear-gradient(135deg, #f7fafc, #edf2f7);
+    }
+    
+    .topic-title {
+      font-size: 22px;
+      font-weight: 600;
+      color: #2d3748;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    
+    .topic-icon {
+      width: 45px;
+      height: 45px;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    
+    .content-section {
+      display: none;
+      background: white;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      margin-top: 20px;
+      animation: fadeIn 0.5s ease-in;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .content-section.active {
+      display: block;
+    }
+    
+    .content-section h2 {
+      color: #2d3748;
+      margin-bottom: 20px;
+      font-size: 28px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    
+    .content-section h3 {
+      color: #4a5568;
+      margin: 25px 0 15px 0;
+      font-size: 22px;
+    }
+    
+    .simple-explanation {
+      background: #f7fafc;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 15px 0;
+      border-left: 5px solid #667eea;
+    }
+    
+    .simple-explanation h4 {
+      color: #2d3748;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+    
+    .example-box {
+      background: #e6fffa;
+      padding: 15px;
+      border-radius: 8px;
+      margin: 15px 0;
+      border-left: 4px solid #38b2ac;
+    }
+    
+    .tools-list {
+      background: #fff5f5;
+      padding: 15px;
+      border-radius: 8px;
+      margin: 15px 0;
+    }
+    
+    .tools-list h4 {
+      color: #e53e3e;
+      margin-bottom: 10px;
+    }
+    
+    .warning-box {
+      background: #fed7d7;
+      padding: 15px;
+      border-radius: 8px;
+      margin: 15px 0;
+      border-left: 4px solid #e53e3e;
+    }
+    
+    ul, ol {
+      margin: 15px 0;
+      padding-left: 25px;
+    }
+    
+    li {
+      margin: 8px 0;
+      color: #4a5568;
+    }
+    
+    .back-btn {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-bottom: 20px;
+      transition: transform 0.2s;
+      font-weight: 500;
+    }
+    
+    .back-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+    }
+    
+    .progress-container {
+      background: #e2e8f0;
+      height: 8px;
+      border-radius: 4px;
+      margin: 20px 0;
+      overflow: hidden;
+    }
+    
+    .progress-fill {
+      background: linear-gradient(90deg, #667eea, #764ba2);
+      height: 100%;
+      transition: width 0.5s ease;
+      border-radius: 4px;
+    }
+    
+    .progress-text {
+      text-align: center;
+      color: #718096;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+    
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: white;
+      background: rgba(0,0,0,0.1);
+      border-radius: 15px;
+      margin-top: 40px;
+    }
+    
+    .no-results {
+      text-align: center;
+      padding: 40px;
+      color: #718096;
+      grid-column: 1 / -1;
+    }
+    
+    @media (max-width: 768px) {
+      .topic-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .content-section {
+        padding: 20px;
+      }
+      
+      header h1 {
+        font-size: 2em;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <div class="brand">
-        <div class="logo-mark">NJ</div>
-        <div>
-          <div class="logo">Web3 Knowledge Universe</div>
-          <div class="subtitle">by <strong>Nuruzzaman_JRM</strong> — Explore, Learn, Build</div>
-        </div>
-      </div>
-      <nav>
-        <a href="#map">Knowledge Map</a>
-        <a href="#learn">Learn</a>
-        <a href="#jobs">Jobs</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <h1>🧠 Complete Web3 Learning Hub</h1>
+      <p>Master ALL 23 Web3 topics with simple explanations - From beginner to expert!</p>
+      <input type="text" class="search-box" placeholder="🔍 Search topics (e.g., DeFi, NFTs, DAOs)..." id="searchBox">
     </header>
 
-    <section class="hero card">
-      <h1>Explore the entire Web3 ecosystem — from blockchain to AI, DeFi, and beyond.</h1>
-      <p class="muted">Curated and built by <strong>Nuruzzaman_JRM</strong>. Start with the map below and deep-dive into any topic.</p>
-      <div class="cta"><a class="btn" href="#map">Start Exploring</a></div>
-    </section>
+    <div class="topic-grid" id="topicGrid">
+      <!-- Topics populated by JavaScript -->
+    </div>
 
-    <main class="grid-2">
-      <div>
-        <section id="map" class="card">
-          <h2 class="section">The Complete Web3 Knowledge Map (2025)</h2>
-          <p class="muted">Click any category to expand — this map contains 23 major Web3 domains with subtopics and tools.</p>
+    <div id="contentArea"></div>
 
-          <div class="accordion" id="accordion">
+    <div class="progress-container" id="progressContainer" style="display: none;">
+      <div class="progress-fill" id="progressFill"></div>
+      <div class="progress-text" id="progressText"></div>
+    </div>
 
-            <!-- We'll include the 23 categories as accordion items -->
-
-            <div class="accordion-item">
-              <div class="acc-head"><h3>1. Core Blockchain Foundation</h3><div class="small">Consensus, nodes, hashing</div></div>
-              <div class="acc-body"><ul>
-                <li>Consensus mechanisms: PoW, PoS, DPoS, PoH, BFT, DAG, HotStuff</li>
-                <li>Block structure & Merkle Trees</li>
-                <li>Nodes & Validators (full, light, RPC)</li>
-                <li>Transaction lifecycle; Hashing & digital signatures</li>
-                <li>Gas & fee economics; Forks; Finality & reorgs</li>
-              </ul></div>
-            </div>
-
-            <div class="accordion-item">
-              <div class="acc-head"><h3>2. Smart Contracts & On-chain Logic</h3><div class="small">Solidity, Rust, formal verification</div></div>
-              <div class="acc-body"><ul>
-                <li>Languages: Solidity, Rust, Move, Vyper</li>
-                <li>Testing frameworks: Hardhat, Foundry, Anchor, Truffle</li>
-                <li>Upgradable patterns: Proxy, Beacon, Diamond</li>
-                <li>Audit & formal verification (MythX, Slither)</li>
-                <li>Oracles & AA (ERC-4337)</li>
-              </ul></div>
-            </div>
-
-            <div class="accordion-item">
-              <div class="acc-head"><h3>3. Wallets & Key Management</h3><div class="small">MPC, social recovery, account abstraction</div></div>
-              <div class="acc-body"><ul>
-                <li>EOA vs Smart Contract Accounts</li>
-                <li>Seed phrases, private/public keys</li>
-                <li>MPC wallets & social recovery</li>
-                <li>Cold vs hot wallets; WalletConnect, RainbowKit</li>
-              </ul></div>
-            </div>
-
-            <div class="accordion-item">
-              <div class="acc-head"><h3>4. Token Standards & Tokenomics</h3><div class="small">ERCs, SPL, token models</div></div>
-              <div class="acc-body"><ul>
-                <li>ERC-20, SPL, ERC-721, ERC-1155, ERC-4626, ERC-6551</li>
-                <li>Token design, utility, governance, vesting</li>
-                <li>Launch models: airdrops, IDOs, fair launches</li>
-              </ul></div>
-            </div>
-
-            <div class="accordion-item">
-              <div class="acc-head"><h3>5. Decentralized Finance (DeFi)</h3><div class="small">DEXs, lending, derivatives</div></div>
-              <div class="acc-body"><ul>
-                <li>DEXs: AMM (Uniswap, Raydium), orderbook (Serum)</li>
-                <li>Lending/Borrowing: Aave, Compound, Solend</li>
-                <li>Yield Farming, Stablecoins, Derivatives, Options</li>
-                <li>Restaking / LSD / LRT; Aggregators; Insurance; RWA-backed DeFi</li>
-              </ul></div>
-            </div>
-
-            <div class="accordion-item">
-              <div class="acc-head"><h3>6. Real World Assets (RWA)</h3><div class="small">Tokenized bonds, real estate, compliance</div></div>
-              <div class="acc-body"><ul>
-                <li>Tokenization of physical & financial assets</li>
-                <li>On-chain yield, legal frameworks, custody & audit</li>
-                <li>Protocols: Ondo, Centrifuge, Goldfinch, Maple, RealT</li>
-              </ul></div>
-            </div>
-
-            <div class="accordion-item">
-              <div class="acc-head"><h3>7. DePIN (Decentralized Physical Infrastructure)</h3><div class="small">Compute, connectivity, sensors</div></div>
-              <div class="acc-body"><ul>
-                <li>Compute: io.net, Akash, Gensyn</li>
-                <li>Connectivity: Helium, WiFiMap</li>
-                <li>Sensors & mapping: WeatherXM, Hivemapper; Energy networks</li>
-              </ul></div>
-            </div>
-
-            <div class="accordion-item">
-              <div class="acc-head"><h3>8. AI x Web3</h3><div class="small">Decentralized AI compute & agents</div></div>
-              <div class="acc-body"><ul>
-                <li>Decentralized AI compute (Bittensor, Ritual)</li>
-                <li>AI model tokenization, federated learning</li>
-                <li>Autonomous AI wallets & proof-of-intelligence</li>
-              </ul></div>
-            </div>
-
-            <div class="accordion-item">
-              <div class="acc-head"><h3>9. Gaming, Metaverse & Virtual Economies</h3><div class="small">GameFi, in-game NFTs</div></div>
-              <div class="acc-body"><ul>
-                <li>Play-to-Earn, Move-to-Earn, Own-to-Earn models</li>
-                <li>Metaverse: The Sandbox, Decentraland, Otherside</li>
-                <li>Web3 game development SDKs & interoperable avatars</li>
-              </ul></div>
-            </div>
-
-            <div class="accordion-item">
-              <div class="acc-head"><h3>10. Interoperability & Cross-chain Systems</h3><div class="small">Bridges, messaging, IBC</div></div>
-              <div class="acc-body"><ul>
-                <li>LayerZero, Wormhole, Axelar, CCIP</li>
-                <li>Bridges & liquidity networks, atomic swaps</li>
-                <li>IBC (Cosmos), modular design, RaaS</li>
-              </ul></div>
-            </div>
-
-            <div class="accordion-item">
-              <div class="acc-head"><h3>11. Modular & Layered Blockchain Architecture</h3><div class="small">Execution, data availability</div></div>
-              <div class="acc-body"><ul>
-                <li>Execution layers (OP Stack), consensus layers</li>
-                <li>Data availability: Celestia, EigenDA</li>
-                <li>Settlement layers, appchains & sovereign rollups</li>
-              </ul></div>
-            </div>
-
-            <div class="accordion-item">
-              <div class="acc-head"><h3>12. DAOs & Governance</h3><div class="small">Treasuries, voting, subDAOs</div></div>
-              <div class="acc-body"><ul>
-                <li>Aragon, Tally, Snapshot, Gnosis Safe</li>
-                <li>Treasury mgmt, proposal voting, delegation</li>
-                <li>Incentive alignment & participation models</li>
-              </ul></div>
-            </div>
-
-            <div class="accordion-item">
-              <div class="acc-head"><h3>13. Decentralized Identity (DID) & Reputation</h3><div class="small">ENS, SBTs, PoP</div></div>
-              <div class="acc-body"><ul>
-                <li>ENS, Lens, Farcaster, CyberConnect</li>
-                <li>Soulbound tokens (SBTs), Proof-of-Personhood</li>
-                <li>Reputation: Galxe, Gitcoin Passport</li>
-              </ul></div>
-            </div>
-
-            <div class="accordion-item">
-              <div class="acc-head"><h3>14. SocialFi & Creator Economy</h3><div class="small">Tokens for creators</div></div>
-              <div class="acc-body"><ul>
-                <li>Tokenized profiles, Friend.tech, DeSo, Lens</li>
-                <li>Creator tokens, NFT memberships, gated access</li>
-              </ul></div>
-            </div>
-
-            <div class="accordion-item">
-              <div class="acc-head"><h3>15. Data & Storage Infrastructure</h3><div class="small">IPFS, Arweave, indexing</div></div>
-              <div class="acc-body"><ul>
-                <li>IPFS, Arweave, Filecoin</li>
-                <li>Indexing: The Graph, SubQuery; Queryable storage</li>
-                <li>Decentralized DBs: Tableland, Ceramic</li>
-              </ul></div>
-            </div>
-
-            <div class="accordion-item">
-              <div class="acc-head"><h3>16. Privacy & Security</h3><div class="small">ZK, mixers, audits</div></div>
-              <div class="acc-body"><ul>
-                <li>ZK proofs: zkSNARKs, zkSTARKs</li>
-                <li>Private txs, on-chain auditing tools</li>
-                <li>Wallet safety, multisig, MPC, bug bounties</li>
-              </ul></div>
-            </div>
-
-            <div class="accordion-item">
-              <div class="acc-head"><h3>17. ReFi & Sustainability</h3><div class="small">Carbon credits, climate DAOs</div></div>
-              <div class="acc-body"><ul>
-                <li>Carbon credits tokenization; KlimaDAO</li>
-                <li>Green assets, renewable financing, impact DAOs</li>
-              </ul></div>
-            </div>
-
-            <div class="accordion-item">
-              <div class="acc-head"><h3>18. Legal, Compliance & Regulatory Layer</h3><div class="small">On-chain KYC, CBDCs</div></div>
-              <div class="acc-body"><ul>
-                <li>On-chain KYC & AML; Regulated RWA markets</li>
-                <li>Smart-contract legal agreements; Arbitration (Kleros)</li>
-                <li>CBDCs & government integrations</li>
-              </ul></div>
-            </div>
-
-            <div class="accordion-item">
-              <div class="acc-head"><h3>19. Analytics, Research & Alpha Hunting</h3><div class="small">Dune, Nansen, Arkham</div></div>
-              <div class="acc-body"><ul>
-                <li>On-chain dashboards: Dune, Nansen, Arkham</li>
-                <li>Wallet tracking & OG analysis; data science in crypto</li>
-                <li>Social sentiment tools: Kaito, LunarCrush</li>
-              </ul></div>
-            </div>
-
-            <div class="accordion-item">
-              <div class="acc-head"><h3>20. Infrastructure, Middleware & Dev Tools</h3><div class="small">RPCs, SDKs, automation</div></div>
-              <div class="acc-body"><ul>
-                <li>RPC providers: Alchemy, QuickNode, Helius</li>
-                <li>SDKs, Subgraphs, Observability (Tenderly)</li>
-                <li>Automation: Gelato, Chainlink Automation</li>
-              </ul></div>
-            </div>
-
-            <div class="accordion-item">
-              <div class="acc-head"><h3>21. Economics & Game Theory in Web3</h3><div class="small">Incentives, mechanism design</div></div>
-              <div class="acc-body"><ul>
-                <li>Token incentive systems; mechanism design</li>
-                <li>Coordination games; Nash equilibrium in DAOs</li>
-                <li>Market simulations & modelling</li>
-              </ul></div>
-            </div>
-
-            <div class="accordion-item">
-              <div class="acc-head"><h3>22. Emerging Innovations (2025+)</h3><div class="small">Restaking, modular AI agents</div></div>
-              <div class="acc-body"><ul>
-                <li>Restaking + AVS expansion; modular AI agents</li>
-                <li>Intent-centric blockchain design; RWA + AI fusion</li>
-                <li>Quantum-resistant cryptography; DeSci; Data DAOs</li>
-              </ul></div>
-            </div>
-
-            <div class="accordion-item">
-              <div class="acc-head"><h3>23. Education, Community & Career</h3><div class="small">Bounties, jobs, open-source</div></div>
-              <div class="acc-body"><ul>
-                <li>Developer bounties & hackathons</li>
-                <li>Technical writing, moderation, DAO roles</li>
-                <li>Web3 job ecosystems & open-source contribution</li>
-              </ul></div>
-            </div>
-
-          </div>
-        </section>
-
-        <section id="learn" class="card">
-          <h2 class="section">Learn & Explore</h2>
-          <p class="muted">Curated resources, tutorials and platforms to level up fast.</p>
-          <div style="margin-top:10px">
-            <div class="tags">
-              <div class="tag">Dune</div>
-              <div class="tag">Nansen</div>
-              <div class="tag">The Graph</div>
-              <div class="tag">Hardhat</div>
-              <div class="tag">Foundry</div>
-              <div class="tag">Supabase</div>
-            </div>
-            <p class="small" style="margin-top:10px">Jobs & Bounties platforms: Zealy, Layer3, Galxe, Dework, Web3.career</p>
-          </div>
-        </section>
-
-        <section id="jobs" class="card">
-          <h2 class="section">Get Involved — Jobs & Bounties</h2>
-          <p class="muted">How to find Web3 jobs, bounties, and community roles.</p>
-          <ol style="margin-top:10px;color:var(--muted)">
-            <li>Create a strong Twitter + Notion portfolio</li>
-            <li>Do small bounties (Layer3, Zealy) to build reputation</li>
-            <li>Join project discords and search job channels</li>
-            <li>Pitch with short DM templates and writing samples</li>
-          </ol>
-        </section>
-
-      </div>
-
-      <aside class="panel">
-        <h3 style="margin:0 0 8px">Quick Links</h3>
-        <div class="small">Select resources & platforms</div>
-        <div style="margin-top:12px">
-          <div class="tag">Framer AI</div>
-          <div class="tag">Replit</div>
-          <div class="tag">Supabase</div>
-          <div class="tag">Vercel</div>
-        </div>
-
-        <div style="margin-top:16px">
-          <h3 style="margin:0 0 8px">Contact</h3>
-          <div class="small">Twitter: <a href="https://twitter.com/Nuruzzaman_JRM" target="_blank" style="color:var(--accent2)">@Nuruzzaman_JRM</a></div>
-          <div class="small">Email: <a href="mailto:nuruzzamanjrm@gmail.com" style="color:var(--accent2)">nuruzzamanjrm@gmail.com</a></div>
-        </div>
-
-        <div style="margin-top:16px">
-          <h3 style="margin:0 0 8px">Theme</h3>
-          <div class="small">Dark neon (purple + blue). Use for presentations & social headers.</div>
-        </div>
-      </aside>
-    </main>
-
-    <footer id="contact" class="card">
-      <div style="display:flex;gap:18px;flex-wrap:wrap;align-items:center;justify-content:space-between">
-        <div>
-          <strong>Work with Nuruzzaman_JRM</strong>
-          <div class="small" style="margin-top:6px">For collaborations, writing, moderation, or Web3 strategy reach out.</div>
-        </div>
-        <div class="contact" style="max-width:420px;width:100%">
-          <input type="text" placeholder="Your name" />
-          <input type="email" placeholder="Your email" />
-          <textarea rows="3" placeholder="Message (what do you want to build?)"></textarea>
-          <div style="margin-top:8px"><a class="btn" href="mailto:nuruzzamanjrm@gmail.com">Email Nuruzzaman</a></div>
-        </div>
-      </div>
-      <div style="margin-top:14px; text-align:center; color:var(--muted)">© "Web3 Knowledge Universe" — Nuruzzaman_JRM • Built for learning (2025)</div>
+    <footer>
+      <p>🚀 Built for everyone - Start with basics, master advanced concepts! 💪</p>
+      <p><strong>23 Topics Complete = Web3 Expert Status! 🎉</strong></p>
     </footer>
   </div>
 
   <script>
-    // accordion behavior
-    document.querySelectorAll('.accordion-item').forEach(item => {
-      const head = item.querySelector('.acc-head');
-      const body = item.querySelector('.acc-body');
-      head.addEventListener('click', () => {
-        const isOpen = body.style.display === 'block';
-        // close others
-        document.querySelectorAll('.acc-body').forEach(b => b.style.display = 'none');
-        if(!isOpen) body.style.display = 'block';
-        head.scrollIntoView({behavior:'smooth', block:'center'});
-      });
-    });
+    const topics = [
+      {
+        id: 1,
+        title: "Core Blockchain Foundation",
+        icon: "🔗",
+        content: `
+          <button class="back-btn" onclick="showTopics()">← Back to All Topics</button>
+          <h2>🔗 Core Blockchain Foundation</h2>
+          
+          <div class="simple-explanation">
+            <h4>🧠 Simple: Blockchain = Unchangeable digital notebook</h4>
+            <p>Think of it like a shared Google Doc where:</p>
+            <ul>
+              <li>Everyone has a copy</li>
+              <li>Can't delete or change old entries</li>
+              <li>New pages need group approval</li>
+              <li>Perfect for money, contracts, records</li>
+            </ul>
+          </div>
 
-    // smooth scroll for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(a=>{
-      a.addEventListener('click', e=>{ e.preventDefault(); const t=document.querySelector(a.getAttribute('href')); if(t) t.scrollIntoView({behavior:'smooth', block:'start'}) });
-    });
-  </script>
-</body>
-</html>
+          <h3>🎯 Key Concepts:</h3>
+          <ul>
+            <li><strong>Consensus:</strong> How everyone agrees (PoW=mining, PoS=staking)</li>
+            <li><strong>Blocks:</strong> Pages in the notebook, linked together</li>
+            <li><strong>Nodes:</strong> Computers keeping the notebook updated</li>
+            <li><strong>Hashing:</strong> Digital fingerprints making data tamper-proof</li>
+          </ul>
+
+          <div class="example-box">
+            <h4>💡 Bitcoin Example:</h4>
+            <p>Miners solve math puzzles → Add block → Everyone verifies → Bitcoin moves safely</p>
+          </div>
+
+          <div class="tools-list">
+            <h4>🛠 Start Here:</h4>
+            <ul>
+              <li><strong>Etherscan:</strong> See live blockchain data</li>
+              <li><strong>Blockstream:</strong> Bitcoin explorer</li>
+              <li><strong>MetaMask:</strong> Connect to blockchain</li>
+            </ul>
+          </div>
+
+          <div class="progress-container">
+            <div class="progress-fill" style="width: 4.35%"></div>
+          </div>
+          <div class="progress-text">Progress: 1/23 topics (4% complete)</div>
+        `
+      },
+      {
+        id: 2,
+        title: "Smart Contracts",
+        icon: "🤖",
+        content: `
+          <button class="back-btn" onclick="showTopics()">← Back to All Topics</button>
+          <h2>🤖 Smart Contracts</h2>
+          
+          <div class="simple-explanation">
+            <h4>🧠 Simple: Self-running agreements</h4>
+            <p>Like a vending machine: Put money in → Get snack out automatically</p>
+            <ul>
+              <li>No middleman needed</li>
+              <li>Code enforces the rules</li>
+              <li>24/7 automatic execution</li>
+              <li>Works for loans, games, voting</li>
+            </ul>
+          </div>
+
+          <h3>🎯 How They Work:</h3>
+          <ol>
+            <li>Write code defining rules</li>
+            <li>Deploy to blockchain (immutable)</li>
+            <li>Users interact → Code runs automatically</li>
+            <li>Result recorded on blockchain</li>
+          </ol>
+
+          <div class="example-box">
+            <h4>💡 Rental Contract:</h4>
+            <p>Bob pays rent → Smart contract auto-transfers to Alice → No disputes!</p>
+          </div>
+
+          <div class="tools-list">
+            <h4>🛠 Development Tools:</h4>
+            <ul>
+              <li><strong>Remix IDE:</strong> Online code editor</li>
+              <li><strong>Hardhat:</strong> Testing framework</li>
+              <li><strong>Foundry:</strong> Advanced testing</li>
+              <li><strong>Solidity:</strong> Main programming language</li>
+            </ul>
+          </div>
+        `
+      },
+      {
+        id: 3,
+        title: "Wallets & Key Management",
+        icon: "💳",
+        content: `
+          <button class="back-btn" onclick="showTopics()">← Back to All Topics</button>
+          <h2>💳 Wallets & Security</h2>
+          
+          <div class="simple-explanation">
+            <h4>🧠 Simple: Your crypto bank account</h4>
+            <p>Wallet = Private key + Public address:</p>
+            <ul>
+              <li><strong>Private Key:</strong> Your secret password (NEVER share)</li>
+              <li><strong>Public Address:</strong> Bank account number (safe to share)</li>
+              <li><strong>Seed Phrase:</strong> 12-24 word backup</li>
+            </ul>
+          </div>
+
+          <h3>🎯 Wallet Types:</h3>
+          <ul>
+            <li><strong>Hot Wallets:</strong> Online (MetaMask) - convenient</li>
+            <li><strong>Cold Wallets:</strong> Offline (Ledger) - secure</li>
+            <li><strong>Custodial:</strong> Exchange holds keys</li>
+            <li><strong>Non-Custodial:</strong> You control keys</li>
+          </ul>
+
+          <div class="warning-box">
+            <h4>⚠ Security Rules:</h4>
+            <ul>
+              <li><strong>Never share seed phrase</strong></li>
+              <li>Double-check addresses</li>
+              <li>Use hardware for large amounts</li>
+              <li>Enable 2FA everywhere</li>
+            </ul>
+          </div>
+
+          <div class="tools-list">
+            <h4>🛠 Popular Wallets:</h4>
+            <ul>
+              <li><strong>MetaMask:</strong> Browser extension</li>
+              <li><strong>Ledger/Trezor:</strong> Hardware</li>
+              <li><strong>Rabby:</strong> Advanced MetaMask</li>
+            </ul>
+          </div>
+        `
+      },
+      {
+        id: 4,
+        title: "Token Standards",
+        icon: "🎫",
+        content: `
+          <button class="back-btn" onclick="showTopics()">← Back to All Topics</button>
+          <h2>🎫 Token Standards & Tokenomics</h2>
+          
+          <div class="simple-explanation">
+            <h4>🧠 Simple: Digital money templates</h4>
+            <p>Tokens = Digital assets with rules:</p>
+            <ul>
+              <li><strong>ERC-20:</strong> Fungible tokens (like $1 bills)</li>
+              <li><strong>ERC-721:</strong> NFTs (unique items)</li>
+              <li><strong>ERC-1155:</strong> Multi-token standard</li>
+            </ul>
+          </div>
+
+          <h3>🎯 Token Types:</h3>
+          <ul>
+            <li><strong>Utility:</strong> Access services</li>
+            <li><strong>Governance:</strong> Voting rights</li>
+            <li><strong>Security:</strong> Investment tokens</li>
+            <li><strong>Stablecoins:</strong> Pegged to $1</li>
+          </ul>
+
+          <div class="example-box">
+            <h4>💡 USDC Example:</h4>
+            <p>ERC-20 token backed 1:1 by USD in bank - stable digital dollar</p>
+          </div>
+
+          <div class="tools-list">
+            <h4>🛠 Token Tools:</h4>
+            <ul>
+              <li><strong>OpenZeppelin:</strong> Secure templates</li>
+              <li><strong>Uniswap:</strong> Token swapping</li>
+              <li><strong>Etherscan:</strong> Token tracking</li>
+            </ul>
+          </div>
+        `
+      },
+      {
+        id: 5,
+        title: "DeFi (Decentralized Finance)",
+        icon: "🏦",
+        content: `
+          <button class="back-btn" onclick="showTopics()">← Back to All Topics</button>
+          <h2>🏦 DeFi - Banking Without Banks</h2>
+          
+          <div class="simple-explanation">
+            <h4>🧠 Simple: All bank services via smart contracts</h4>
+            <p>Traditional: You → Bank → Approval → Money moves</p>
+            <p>DeFi: You → Smart Contract → Instant → Money moves</p>
+            <ul>
+              <li>24/7 global access</li>
+              <li>No ID required</li>
+              <li>Transparent code</li>
+              <li>Higher yields usually</li>
+            </ul>
+          </div>
+
+          <h3>🎯 Main Services:</h3>
+          <ul>
+            <li><strong>DEXs:</strong> Uniswap (decentralized exchanges)</li>
+            <li><strong>Lending:</strong> Aave, Compound</li>
+            <li><strong>Yield Farming:</strong> Earn rewards</li>
+            <li><strong>Stablecoins:</strong> USDC, DAI</li>
+          </ul>
+
+          <div class="tools-list">
+            <h4>🛠 DeFi Platforms:</h4>
+            <ul>
+              <li><strong>Uniswap:</strong> Swap tokens</li>
+              <li><strong>Aave:</strong> Lend/borrow</li>
+              <li><strong>Zapper:</strong> Portfolio tracker</li>
+            </ul>
+          </div>
+        `
+      },
+      {
+        id: 6,
+        title: "Real World Assets (RWA)",
+        icon: "🏠",
+        content: `
+          <button class="back-btn" onclick="showTopics()">← Back to All Topics</button>
+          <h2>🏠 Real World Assets</h2>
+          
+          <div class="simple-explanation">
+            <h4>🧠 Simple: Tokenizing real stuff</h4>
+            <p>Take physical assets (houses, bonds) and make digital tokens:</p>
+            <ul>
+              <li>Fractional ownership</li>
+              <li>24/7 trading</li>
+              <li>Global access</li>
+              <li>Transparent ownership</li>
+            </ul>
+          </div>
+
+          <h3>🎯 Examples:</h3>
+          <ul>
+            <li><strong>Real Estate:</strong> Buy 1% of a building</li>
+            <li><strong>Bonds:</strong> Tokenized government debt</li>
+            <li><strong>Art:</strong> Fractional Picasso ownership</li>
+            <li><strong>Commodities:</strong> Digital gold bars</li>
+          </ul>
+
+          <div class="example-box">
+            <h4>💡 RealT Example:</h4>
+            <p>Buy tokens representing real estate → Earn rental income automatically</p>
+          </div>
+
+          <div class="tools-list">
+            <h4>🛠 RWA Platforms:</h4>
+            <ul>
+              <li><strong>Centrifuge:</strong> Asset tokenization</li>
+              <li><strong>Ondo Finance:</strong> RWA yields</li>
+              <li><strong>RealT:</strong> Real estate tokens</li>
+            </ul>
+          </div>
+        `
+      },
+      {
+        id: 7,
+        title: "DePIN (Decentralized Infrastructure)",
+        icon: "🌐",
+        content: `
+          <button class="back-btn" onclick="showTopics()">← Back to All Topics</button>
+          <h2>🌐 DePIN - Decentralized Physical Networks</h2>
+          
+          <div class="simple-explanation">
+            <h4>🧠 Simple: Crowdsourced physical infrastructure</h4>
+            <p>People share real-world resources via blockchain:</p>
+            <ul>
+              <li>Internet bandwidth</li>
+              <li>Storage space</li>
+              <li>Computing power</li>
+              <li>Sensors/data</li>
+            </ul>
+          </div>
+
+          <h3>🎯 Categories:</h3>
+          <ul>
+            <li><strong>Compute:</strong> Decentralized cloud (Akash)</li>
+            <li><strong>Storage:</strong> Filecoin, Arweave</li>
+            <li><strong>Wireless:</strong> Helium hotspots</li>
+            <li><strong>Sensors:</strong> Weather data, mapping</li>
+          </ul>
+
+          <div class="example-box">
+            <h4>💡 Helium Example:</h4>
+            <p>Buy hotspot → Provide WiFi coverage → Earn HNT tokens</p>
+          </div>
+
+          <div class="tools-list">
+            <h4>🛠 DePIN Projects:</h4>
+            <ul>
+              <li><strong>Helium:</strong> Decentralized wireless</li>
+              <li><strong>Filecoin:</strong> Decentralized storage</li>
+              <li><strong>Akash:</strong> Cloud computing</li>
+            </ul>
+          </div>
+        `
+      },
+      {
+        id: 8,
+        title: "AI x Web3",
+        icon: "🧠🤝",
+        content: `
+          <button class="back-btn" onclick="showTopics()">← Back to All Topics</button>
+          <h2>🧠🤝 AI + Web3</h2>
+          
+          <div class="simple-explanation">
+            <h4>🧠 Simple: Decentralized AI infrastructure</h4>
+            <p>Blockchain + AI =:</p>
+            <ul>
+              <li>Decentralized AI compute power</li>
+              <li>Tokenized AI models</li>
+              <li>AI agents with crypto wallets</li>
+              <li>Trustless AI services</li>
+            </ul>
+          </div>
+
+          <h3>🎯 Use Cases:</h3>
+          <ul>
+            <li><strong>Compute:</strong> Rent GPU power for AI</li>
+            <li><strong>Models:</strong> Trade trained AI models</li>
+            <li><strong>Agents:</strong> Autonomous AI traders</li>
+            <li><strong>Data:</strong> Privacy-preserving datasets</li>
+          </ul>
+
+          <div class="tools-list">
+            <h4>🛠 AI Web3 Projects:</h4>
+            <ul>
+              <li><strong>Bittensor:</strong> Decentralized AI network</li>
+              <li><strong>Fetch.ai:</strong> AI agents</li>
+              <li><strong>Ocean Protocol:</strong> Data marketplace</li>
+            </ul>
+          </div>
+        `
+      },
+      {
+        id: 9,
+        title: "Gaming & Metaverse",
+        icon: "🎮",
+        content: `
+          <button class="back-btn" onclick="showTopics()">← Back to All Topics</button>
+          <h2>🎮 Web3 Gaming & Metaverse</h2>
+          
+          <div class="simple-explanation">
+            <h4>🧠 Simple: Play-to-earn + own your assets</h4>
+            <p>Traditional gaming: Company owns everything</p>
+            <p>Web3 gaming: You own items, characters, land as NFTs</p>
+            <ul>
+              <li>True ownership</li>
+              <li>Tr
